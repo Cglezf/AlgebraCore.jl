@@ -12,12 +12,9 @@ makedocs(;
         edit_link="main",
         assets=String[],
     ),
-    pages=[
-        "Home" => "index.md",
-    ],
+    pages=["Home" => "index.md"],
+    clean=true,
+    checkdocs=:exports,
 )
 
-deploydocs(;
-    repo="github.com/Cglezf/AlgebraCore.jl",
-    devbranch="main",
-)
+deploydocs(; repo="github.com/Cglezf/AlgebraCore.jl", devbranch="main")

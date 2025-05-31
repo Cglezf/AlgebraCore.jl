@@ -1,14 +1,49 @@
+# AlgebraCore
+
 ```@meta
 CurrentModule = AlgebraCore
 ```
 
-# AlgebraCore
+Bienvenido a la documentación de **AlgebraCore.jl**, un paquete diseñado para definir y operar con expresiones algebraicas simples, siguiendo principios idiomáticos de Julia como el *múltiple despacho* y la *composición funcional*.
 
-Documentation for [AlgebraCore](https://github.com/Cglezf/AlgebraCore.jl).
+## Tabla de Contenidos
 
-```@index
+```@contents
+Pages = ["index.md"]
+Depth = 2
 ```
 
-```@autodocs
-Modules = [AlgebraCore]
+## Tipos
+
+```@docs
+AlgebraCore.ScalarOp
 ```
+
+## Operaciones Aritméticas
+
+```@docs
+AlgebraCore.add
+AlgebraCore.sub
+AlgebraCore.mul
+AlgebraCore.div_safe
+```
+
+## Comparaciones
+
+```@docs
+Base.:(==)
+Base.isapprox
+Base.hash
+```
+
+## Tolerancia y control de errores
+
+```@docs
+AlgebraCore.Tolerance.get_tolerance
+AlgebraCore.Tolerance.set_tolerance!
+AlgebraCore.Tolerance.with_tolerance
+```
+
+## Referencias
+
+- [Repositorio en GitHub](https://github.com/Cglezf/AlgebraCore.jl)
