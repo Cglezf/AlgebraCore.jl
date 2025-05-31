@@ -36,6 +36,14 @@ Base.isapprox
 Base.hash
 ```
 
+## Tolerancia y control de errores
+
+```@docs
+AlgebraCore.Tolerance.get_tolerance
+AlgebraCore.Tolerance.set_tolerance!
+AlgebraCore.Tolerance.with_tolerance
+```
+
 ## Referencias
 
 - [Repositorio en GitHub](https://github.com/Cglezf/AlgebraCore.jl)
